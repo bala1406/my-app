@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my deployment
+  name: my-deployment
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
-      app: my-app
+      app: webserver
   template:
     metadata:
       labels:
-        app: my-app
+        app: webserver
     spec:
       containers:
-      - name: my-app-container
+      - name: cont1
         image: mkrish1825/myweb:0.0.2
         ports:
-        - containerPort: 8085
+          - containerPort: 8085
