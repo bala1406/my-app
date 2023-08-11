@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: myweb
-          image: mkrish1825/myweb:0.0.2
+          image: balaji1406/myweb:0.0.2
           ports:
             - containerPort: 8080
               protocol: TCP
